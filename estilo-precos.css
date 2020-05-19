@@ -1,0 +1,124 @@
+/*************  RESET ************* */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+header li{
+    list-style: none;
+}
+
+/* ********************************************* */
+/* ******************* HEADER ****************** */
+
+header {
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.876);
+    text-align: center;
+    font-size: 1em;
+}
+
+header img{
+    margin-top: 5px;
+    width: 300px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+@media(min-width: 980px){
+    header{
+        display:flex;
+        padding: 20px 50px;
+        align-items: center;
+        justify-content: space-between;    
+    }
+    header nav{
+        display: flex;
+        align-items: flex-end;    
+        width: 100vw;
+        height: 10vh;    
+        font-size: 1.5em;
+    }
+    header img{
+        width: 300px;
+    }
+    header a:hover{
+        text-decoration: underline;
+    }
+    .formulario {
+        font-size: 1.3em;        
+    }
+    .formulario h1{
+        font-size: 3em;
+    }
+    .formulario input{
+        font-size: 16px;
+    }            
+}
+
+/* ******************************* */
+/* *********** PRECOS ************* */
+
+.secao .pacote-1 , .secao .pacote-2{
+    border: 2px solid rgba(223, 184, 9, 0.904);
+    padding: 12px;
+    line-height: 30px;
+    width: 70%;
+    margin-left: 16%;
+}
+
+.secao h1{
+    text-align: center;
+    border-bottom: 1px solid rgb(5, 83, 5);
+}
+
+.secao h4{
+    font-size: 1.2em;
+    margin-top: 10px
+}
+
+.secao .pacote-1{
+    margin-top: 2%;
+}
+
+.secao .pacote-2{
+    margin-top: 3%;
+}
+
+.secao .pacote-1, .secao .pacote-2{
+    transition: background-color 0.8s, border-radius 0.8s;
+}
+.secao .pacote-1:active, .secao .pacote-2:active,
+.secao .pacote-1:hover, .secao .pacote-2:hover{
+    background-color: rgba(253, 228, 5, 0.986);
+    border-radius: 5%;
+}
+
+@media(min-width: 980px){
+    .secao{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3%;
+    }
+    .secao .pacote-1 , .secao .pacote-2{
+        margin: 0%;
+        height: 390px;
+        width: 30vw;
+    }
+}

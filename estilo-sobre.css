@@ -1,0 +1,135 @@
+/*************  RESET ************* */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+header li{
+    list-style: none;
+}
+
+/* ********************************************* */
+/* ******************* HEADER ****************** */
+
+header {
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.876);
+    text-align: center;
+    font-size: 1em;
+}
+
+header img{
+    margin-top: 5px;
+    width: 300px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+@media(min-width: 980px){
+    header{
+        display:flex;
+        padding: 20px 50px;
+        align-items: center;
+        justify-content: space-between;    
+    }
+    header nav{
+        display: flex;
+        align-items: flex-end;    
+        width: 100vw;
+        height: 10vh;    
+        font-size: 1.5em;
+    }
+    header img{
+        width: 300px;
+    }
+    header a:hover{
+        text-decoration: underline;
+    }
+    .formulario {
+        font-size: 1.3em;        
+    }
+    .formulario h1{
+        font-size: 3em;
+    }
+    .formulario input{
+        font-size: 16px;
+    }            
+}
+
+/* ******************************* */
+/* *********** SOBRE ************* */
+
+.sobre{
+    padding: 20px 40px;
+    background-color: rgba(228, 222, 222, 0.308);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img-hotel {
+    width: 50vw;
+    border-radius: 5%;
+    border: 2px solid black;
+    box-shadow: 10px 5px 30px  black;
+}
+
+.img-hotel{
+    margin-bottom: 1%;
+
+}
+
+.txt-sobre{
+    font-size: 1em;
+}
+
+.txt-sobre h1{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.txt-sobre p{
+    margin-top: 3%;
+}
+
+@media(min-width: 900px){
+    .sobre{
+        display: inline-block;
+    }
+    .sobre img{
+        float: left;
+        margin-right: 2em;
+        width: 40%;
+    }
+    .txt-sobre h1{
+        font-size: 2em;
+        margin-bottom: 2%;
+    }
+    .txt-sobre p{
+        font-size: 1.2em;
+        margin-top: 2%;
+    }
+
+}
+
+
+
